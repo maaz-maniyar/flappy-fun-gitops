@@ -12,4 +12,4 @@ patches:
 
 images:
   - name: docker.io/maazjazelle/flappy-fun
-    newTag: 16-dee18fe
+    newTag: 17-dee18fe
