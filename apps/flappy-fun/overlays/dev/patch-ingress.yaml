@@ -4,4 +4,12 @@ metadata:
   name: flappy-fun
 spec:
   rules:
-    - host: dev.flappy-fun.example.com
+    - http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: flappy-fun
+                port:
+                  number: 80
