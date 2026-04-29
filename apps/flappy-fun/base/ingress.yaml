@@ -7,7 +7,7 @@ metadata:
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/healthcheck-path: /healthz
 spec:
-  ingressClassName: alb
+  ingressClassName: nginx
   rules:
     - host: flappy-fun.example.com
       http:
