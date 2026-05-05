@@ -8,7 +8,6 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: staging.flappy-fun.example.com   # remove if not using DNS
       http:
         paths:
           - path: /
