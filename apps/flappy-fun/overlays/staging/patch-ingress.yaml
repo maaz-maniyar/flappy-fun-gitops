@@ -4,10 +4,11 @@ metadata:
   name: flappy-fun
   annotations:
     kubernetes.io/ingress.class: nginx
+    argocd.argoproj.io/health-check: ignore
 spec:
   ingressClassName: nginx
   rules:
-    - host: staging.flappy-fun.example.com   # optional (can remove if not using DNS)
+    - host: staging.flappy-fun.example.com   # remove if not using DNS
       http:
         paths:
           - path: /
